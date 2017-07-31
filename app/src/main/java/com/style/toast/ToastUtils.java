@@ -28,10 +28,10 @@ public class ToastUtils {
     /**
      * 公开的
      */
-    public ToastUtils(Context context){
+    private ToastUtils(Context context){
          this.context = context;
     }
-    private static ToastUtils getToasturils(){
+    public static ToastUtils getToasturils(){
         if(toasturils==null){
     synchronized (ToastUtils.class){
         if (toasturils == null) {

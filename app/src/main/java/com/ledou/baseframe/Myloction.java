@@ -1,6 +1,7 @@
 package com.ledou.baseframe;
 
 import android.app.Application;
+import android.content.Context;
 
 import com.style.toast.ToastUtils;
 
@@ -9,11 +10,11 @@ import com.style.toast.ToastUtils;
  */
 
 public class Myloction extends Application{
-
     @Override
     public void onCreate() {
         super.onCreate();
 
 
     }
+
 }

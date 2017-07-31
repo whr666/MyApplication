@@ -5,4 +5,12 @@
     <color name="colorAccent">#FF4081</color>
     <color name="touming2">#a0000000</color>
     <color name="indexbgcolor">#f2f3f5</color>
+    <color name="toolbarbg">#FF4081</color>
+    <color name="tabbarbg1">#DC143C</color>
+    <color name="tabbarbg2">#FFA500</color>
+    <color name="tabbarbg3">#FFFF00</color>
+    <color name="tabbarbg4">#008000</color>
+    <color name="tabbarbg5">#00FFFF</color>
+    <color name="tabbarbg6">#0000FF</color>
+    <color name="tabbarbg7">#800080</color>
 </resources>

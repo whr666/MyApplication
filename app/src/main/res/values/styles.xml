@@ -3,11 +3,13 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+       <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+       <item name="android:actionBarSize">45dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="actionOverflowButtonStyle">@style/ActionButton.Overflow.toolbar</item>
     </style>
-
 
     <style name="theme_dialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowFrame">@null</item>
@@ -18,6 +20,39 @@
         <item name="android:windowBackground">@color/touming2</item>
         <item name="android:backgroundDimEnabled">false</item>
     </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- 设置图标-->
+    <style name="ActionButton.Overflow.toolbar" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@android:drawable/ic_menu_add</item>
+    </style>
+
+
+
+    <!-- Toolbar主题设置-->
+    <style name="ToolBarTheme" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColorSecondary">#ffffff</item>
+        <item name="android:colorBackground">#aa333333</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item> <!--新增一个item，用于控制menu-->
+        <!-- <item name="android:actionOverflowButtonStyle">@style/OverflowButtonStyle</item>-->
+    </style>
+    <!--修改toolbar弹出菜单的位置-->
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>  <!--把该属性改为false即可使menu位置位于toolbar之下-->
+    </style>
+    <!--修改toolbar菜单按钮的style-->
+    <style name="OverflowButtonStyle" parent="@android:style/Widget.ActionButton.Overflow">
+        <item name="android:src">@mipmap/ic_launcher</item>
+    </style>-->
+    <!--toolbar菜单按钮的颜色-->
+    <style name="ActionButton.Overflow" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+    </style>
+
+
+
 
 
 
